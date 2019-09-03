@@ -101,6 +101,32 @@ public class Monster {
         }
     }
 
+    public static int findIndex(Monster[] monster, String name) {
+
+        // Looping over the array.
+        if ( monster == null ) {
+            return -1;
+        }
+
+        int length = monster.length;
+        int i = 0;
+
+        while( i < length ){
+
+            if ( monster[i].name == name ) {
+                return i;
+            } else {
+                i++;
+            }
+
+        }
+        return -1;
+    } // ENDOF findIndex.
+
+    static int moveMonster(Monster[] monster, int index) {
+        
+    }
+
     // NOw COMES THE CONSTRUCTOR.
     // this is the first function to be called whenever , a
     // new object based off of this class is created.
@@ -167,13 +193,31 @@ public class Monster {
 
         // ObjectName[] ArrayName = new ObjectName[4];
 
+        // we define the object data type, if we want to store the arrays of objects.
+        // Since the Monster is a class, but we want to have an array to hold many monsters
+        // so we need to instantiate an object of it for array.
         Monster[] Monsters = new Monster[4];
 
         Monsters[0] = new Monster(500, 20, 1, "Vidushe");
         Monsters[1] = new Monster(300, 40, 2, "Momo");
         Monsters[2] = new Monster(100, 20, 1, "Charu");
-        Monsters[3] = new Monster(200, 20, 1, "Babieeee");
+        Monsters[3] = new Monster(200, 20, 1, "Baby");
 
         Monster.redrawBoard();
+
+        // System.out.println(Arrays.toString(Monsters));
+        // moving the monsters.
+        // looping over the baby monsters we have
+        for ( Monster m: Monsters ) {
+
+            // checking if the Monster is alive
+            if ( m.getAlive() ) {
+
+                // finding the index of the monster to move.
+                int monsterIndex = findIndex(Monsters, m.name);
+                // System.out.println("MOnster:" + m.name + " Index" + monsterIndex);
+                m.moveMonster(Monsters, monsterIndex);
+            }
+        }
     }
 }
