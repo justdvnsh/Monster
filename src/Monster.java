@@ -123,9 +123,9 @@ public class Monster {
         return -1;
     } // ENDOF findIndex.
 
-    static int moveMonster(Monster[] monster, int index) {
-        
-    }
+//    static int moveMonster(Monster[] monster, int index) {
+//
+//    }
 
     // NOw COMES THE CONSTRUCTOR.
     // this is the first function to be called whenever , a
@@ -216,7 +216,7 @@ public class Monster {
                 // finding the index of the monster to move.
                 int monsterIndex = findIndex(Monsters, m.name);
                 // System.out.println("MOnster:" + m.name + " Index" + monsterIndex);
-                m.moveMonster(Monsters, monsterIndex);
+                // m.moveMonster(Monsters, monsterIndex);
             }
         }
     }
