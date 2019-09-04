@@ -58,7 +58,6 @@ public class Array {
 
         // to copy array
         ArrayList copiedArr = new ArrayList();
-        ArrayList copiedArr2 = new ArrayList();
 
         // addAll copies the array
         copiedArr.addAll(arrString);

@@ -123,9 +123,32 @@ public class Monster {
         return -1;
     } // ENDOF findIndex.
 
-//    static int moveMonster(Monster[] monster, int index) {
-//
-//    }
+    public void moveMonster(Monster[] monster, int index) {
+
+        //Check if where the monster tries to move , if that place is occupied or not on the
+        // battleBoard.
+        boolean isSpaceOpen = true;
+
+        // check the maximum position of the battle board , where the monster could move , without
+        // falling off .
+        int maxBoardXPosition = battleBoard.length - 1; // since the length starts from 1 and not 0
+        int maxBoardYPosition = battleBoard[1].length - 1; // since we are taking the inner element.
+
+        while ( isSpaceOpen ) {
+
+            // generate the moving positions - N,S,E,W
+            int randMoveDirection = ( int ) ( Math.random() * 4 );
+
+            // generate the  move distance for the monster based on the maxMove distance of the
+            // mosnter.
+            int randMoveDistance = ( int ) ( Math.random() * ( this.getMovement() + 1 ) );
+
+            System.out.println(randMoveDistance + " " + randMoveDirection);
+
+            // if the monster moves from it position.
+            battleBoard[this.xPosition][this.yPosition] = '*';
+        }
+    }
 
     // NOw COMES THE CONSTRUCTOR.
     // this is the first function to be called whenever , a
@@ -216,7 +239,7 @@ public class Monster {
                 // finding the index of the monster to move.
                 int monsterIndex = findIndex(Monsters, m.name);
                 // System.out.println("MOnster:" + m.name + " Index" + monsterIndex);
-                // m.moveMonster(Monsters, monsterIndex);
+                 m.moveMonster(Monsters, monsterIndex);
             }
         }
     }
