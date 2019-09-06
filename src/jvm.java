@@ -21,7 +21,19 @@ public class jvm {
 
         System.out.println(c1.getName()); // gets the name of the class .
 
-        Method m1[] = c1.getDeclaredMethods();
+        Method m1[] = c1.getDeclaredMethods(); // for getting all the methods in the class
+
+        for ( Method m: m1 ) {
+            System.out.print(m.getName());
+        }
+
+        System.out.println();
+
+        Field f1[] = c1.getDeclaredFields(); // getting the fields.
+
+        for ( Field f: f1 ) {
+            System.out.print(f.getName());
+        }
     }
 
 }
@@ -48,3 +60,9 @@ class Student {
         this.roll_no = roll_no;
     }
 }
+
+// Then Linking happens . When the main function runs , linking happens. Here the JVM performs
+// verification - checks the correctness of the program. Then Preparation happens - JVM allocates
+// memory for all the vars and initializing the memory to default values. And finally but optional ,
+// Resolution happens - where it checks , if any referenced identity is present , it changes it with
+// original value. Then initialization happens , where the code is executed from top to bottom.

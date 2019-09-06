@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1052f94e-f807-4f0e-a627-891a9ea22be3" name="Default Changelist" comment="" />
+    <list default="true" id="1052f94e-f807-4f0e-a627-891a9ea22be3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvm.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Monster">
+  <component name="RunManager" selected="Application.jvm">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array" />
       <module name="Monster" />
@@ -62,8 +65,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="jvm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jvm" />
+      <module name="Monster" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.jvm" />
         <item itemvalue="Application.Monster" />
         <item itemvalue="Application.Array" />
         <item itemvalue="Application.Main" />
