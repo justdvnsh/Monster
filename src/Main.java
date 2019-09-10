@@ -207,7 +207,7 @@ public class Main {
         // this block executes no matter exception was catched or not.
         finally {
             System.out.println("This block always executes, whether or not any exception is caught or not. This block is used to close the database connections or stuff like that.");
-        }
+       }
 
     }
 
