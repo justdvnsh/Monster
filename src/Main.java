@@ -20,6 +20,9 @@ public class Main {
     // userInput is making use of Scaner class , which is instantiating new instance for taking user input.
     static Scanner userInput = new Scanner(System.in);
 
+    // static to a method refers to the class , rather than the object.
+    // i.e. the method can be called/invoked , even if the class hasn't been
+    // instantiated.
     public static void main(String[] args) {
         // local variable inside of a method.
         int number = 22;

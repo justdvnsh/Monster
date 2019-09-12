@@ -56,9 +56,11 @@ public class Monster {
     public int xPosition = 0;
     public int yPosition = 0;
 
-    // static refers to a method or variable which can be
-    // accessed even if the object is not instantiated of the
-    // class, to which it belongs.
+    // static in fields , saves mememory. I.e. if we have a field,
+    // which we know will be the common property of all the 
+    // classes , we can make it static, since each time an object is 
+    // created , the fields get their memory. Now, if we make them static
+    // their memory will be allocated only once. This saves memory.
     public static int numOfMonsters = 0;
 
     // we need to define several methods , since, the outer
