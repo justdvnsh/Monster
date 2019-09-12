@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.HashMap;
 
 public class Array {
 
@@ -71,6 +72,16 @@ public class Array {
             System.out.println(copiedArr);
             System.out.println(arrString);
         }
+
+        //hashmaps are data structures which map a particular index to
+        // its value. ( Consider it dictionary in python. )
+        HashMap hash = new HashMap();
+
+        hash.put("Song", "Something just like this");
+        hash.put("rating", 9.8);
+
+        // use hash.size() to get the size of the map.
+        System.out.println(hash);
 
 
     }
